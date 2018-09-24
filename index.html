@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="processOrders.js"></script>
+    <script type="text/javascript" src="./acmeProcessing.js"></script>
 </head>
 
-<body>
+<body onload="setCookies()">
     <form>
         <div>
             <legend><b>Order Form</b></legend>
@@ -28,7 +29,7 @@
             <input type="checkbox" name="group">
             <br>
             <br>
-            <button type="button" onclick="submit(this.form)">
+            <button type="button" onclick="submitOrder(this.form)">
                 Submit order
             </button>
         </div>
@@ -36,10 +37,7 @@
 
     <div>
     <legend><b>Order Processing </b><button type="button" onclick="resetProcessing()">Reset</button></legend>
-        <div id="processing">
-            
-        </div>
+        <p id="processing"></p>
     </div>
 </body>
-
 </html>

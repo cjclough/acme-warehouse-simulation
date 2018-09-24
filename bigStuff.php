@@ -1,5 +1,5 @@
 <?php
     // Simulate delay
-    $delay = usleep(rand(17361,208332));
+    $delay = usleep(rand(3572,41667)); // 5 minutes to 1 hour
     echo $delay;
 ?>
