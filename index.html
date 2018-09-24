@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="processOrders.js"></script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <legend><b>Order Form</b></legend>
+            <label for="bunnies">Stuffed bunny:</label>
+            <input type="number" name="bunnies" value="0" min="0" max="5">
+            <br>
+            <label for="lbaskets">Easter basket(large):</label>
+            <input type="number" name="lbaskets" value="0" min="0" max="5">
+            <br>
+            <label for="sbaskets">Easter basket(small):</label>
+            <input type="number" name="sbaskets" value="0" min="0" max="5">
+            <br>
+            <label for="eggs">Easter egg:</label>
+            <input type="number" name="eggs" value="0" min="0" max="5">
+            <br>
+            <label for="delivery">Delivery time (days):</label>
+            <input type="number" name="delivery" value="0" min="0" max="30">
+            <br>
+            <label for="group">Group items?</label>
+            <input type="checkbox" name="group">
+            <br>
+            <br>
+            <button type="button" onclick="submit(this.form)">
+                Submit order
+            </button>
+        </div>
+    </form>
+
+    <div>
+    <legend><b>Order Processing </b><button type="button" onclick="resetProcessing()">Reset</button></legend>
+        <div id="processing">
+            
+        </div>
+    </div>
+</body>
+
+</html>

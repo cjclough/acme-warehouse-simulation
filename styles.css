@@ -1,0 +1,31 @@
+div {
+    float: left;
+    width: 350px;
+}
+
+div p {
+    text-align: center;
+}
+
+legend {
+    font-size: 22px;
+    text-align: center;
+}
+
+.order-processing {
+    float: left;
+    width: 400px;
+}
+
+input:invalid {
+    color: red;
+}
+
+#processing {
+	margin: 0px 0px 0px 25px;
+	height:120px;
+	width:300px;
+	border:1px solid #ccc;
+	font:16px/26px Georgia, Garamond, Serif;
+	overflow:auto;
+}
