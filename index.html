@@ -2,11 +2,12 @@
 <html>
 
 <head>
+    <title>ACME Distribution Company</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="./acmeProcessing.js"></script>
 </head>
 
-<body onload="setCookies()">
+<body onload="updateCookies()" src="./acmeProcessing.js">
     <form>
         <div>
             <legend><b>Order Form</b></legend>
@@ -25,8 +26,8 @@
             <label for="delivery">Delivery time (days):</label>
             <input type="number" name="delivery" value="0" min="0" max="30">
             <br>
-            <label for="group">Group items?</label>
-            <input type="checkbox" name="group">
+            <label for="grouped">Group items?</label>
+            <input type="checkbox" name="grouped">
             <br>
             <br>
             <button type="button" onclick="submitOrder(this.form)">
